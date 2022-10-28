@@ -1,0 +1,327 @@
+@import url("http://fonts.cdnfonts.com/css/inter");
+@import url("http://fonts.cdnfonts.com/css/product-sans");
+@import url('http://fonts.cdnfonts.com/css/google-sans');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  width: 100%;
+  font-family: 'Product sans', sans-serif;
+}
+
+.wrapper{
+  width:100%;
+  height: 100vh;
+  border: 2px solid brown;
+}
+
+/* Home page */
+ .home {
+  display: flex;
+  height: 90%;
+
+}
+/*Side bar desktop*/
+.nav{
+  display: flex;
+  display: none;
+  flex: 0 1 14%;
+  justify-content: center;
+  background: #899bc5;
+}
+
+.nav-links{
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.link{
+  text-decoration: none;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Sidebar mobile/tablet view */
+.nav-mobile{
+  display: flex;
+  justify-content: space-around;
+  gap: 5rem;
+  padding: 1.5rem;
+  height: 10%;
+  background: pink;
+
+}
+
+.nav-links-mobile{
+  display: flex;
+  gap: 4rem;
+  margin: auto;
+
+}
+.link-mobile{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: blueviolet
+}
+
+
+.info-home{
+  width:70% ;
+  margin:  100px auto;
+  text-align: center;
+}
+
+.info-home h3{
+font-size: 3rem;
+margin-bottom: 1.5rem;
+text-transform: uppercase;
+color: violet;
+}
+
+.info-home p{
+  font-size: 1.3rem;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 1.3rem;
+}
+
+.home-img{
+  display: flex;
+  flex: 0 1 80%;
+  margin: auto;
+  max-width: 300px;
+}
+
+img{
+  width: 100%;
+}
+
+
+/* About Page*/
+.about{
+  display: flex;
+  border:1px solid red;
+  width: 100%;
+  height: 100vh;
+}
+
+.about-content{
+  display: flex;
+  flex: 0 1 80%;
+  gap: 30px;
+  height:auto;
+  max-width: 650px;
+  margin: 100px auto;
+  justify-content: center;
+  max-width: 650px;
+}
+
+.about-info{
+  width: 50%;
+  flex-direction: column;
+ 
+  
+}
+
+.about-info h2{
+  font-size: 3rem;
+  color: violet;
+  margin-bottom:1.5rem;
+}
+
+.about-info p{
+height:40%;
+font-size: 1.0rem;
+color: #516081;
+text-align: justify;
+}
+
+.about-image{
+  display: flex;
+  flex: 0 1 50%;
+  height: 70%;
+}
+img{
+  width: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+
+}
+
+/* User page */
+
+.container {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  background: #e5e5e5;
+}
+
+.container h3 {
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31.19px;
+  line-height: 44px;
+  color: #899bc5;
+  border: 1px solid red;
+}
+
+.card {
+  background: #ffffff;
+  box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.25),
+    4px 4px 16px rgba(137, 155, 197, 0.4);
+  border-radius: 8px;
+  width: 320px;
+  height: 360px;
+  text-align: center;
+}
+
+#username {
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  text-align: center;
+  color: #516081;
+}
+
+#email {
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+  color: #301f77;
+}
+
+#add {
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  text-align: center;
+  color: #516081;
+}
+
+#num {
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  text-align: center;
+  color: #516081;
+}
+
+.card-img {
+  margin: 1.2rem;
+}
+
+.card-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.loading{
+  text-align: center;
+  padding: 25%;
+  margin: auto;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: "Product Sans";
+}
+
+
+/* Error Page */
+
+.error-page {
+  background: #899bc5;
+  width: 100%;
+  height: 782px;
+}
+
+.error-body {
+  display: flex;
+  padding: 10px;
+}
+
+.error-info {
+  padding: 2%;
+}
+
+.error-info h1 {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 200px;
+  line-height: 220px;
+  color: #222222;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.error-info h4 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 34px;
+  color: #222222;
+  text-align: center;
+}
+
+.error-info p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.error-info button {
+  font-family: "Inter";
+  width: 200px;
+  height: 52px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29px;
+  background: #222222;
+  color: #ffffff;
+  border-radius: 8px;
+  text-align: center;
+  margin-left: 300px;
+  margin-top: 20px;
+}
+
+.error-image {
+  padding-top: 9%;
+}
+
+.error-img {
+  width: 500px;
+  height: 500px;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-links {
+    padding-left: 10%;
+  }
+
+  /* Error page */
+  .error-body {
+    display: flex;
+    flex-direction: column;
+  }
+}
