@@ -151,8 +151,14 @@ img{
   width: 100%;
 }
 
-@media only screen and (max-width: 750px) {
+/* @media only screen and (max-width: 750px) {
 
+} */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+  
 }
 
 /* User page */
